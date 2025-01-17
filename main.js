@@ -8,7 +8,7 @@ const bot = new Telegraf(token);
 
 bot.command("start", (ctx) => {
   ctx.reply(
-    "Добро пожаловать на наш телеграмм бот! Нажмите на кнопку ниже, чтобы запустить приложение",
+    "Добро пожаловать! Нажмите на кнопку ниже, чтобы запустить приложение",
     Markup.keyboard([
       Markup.button.webApp("Отправить сообщение", `${webAppUrl}/feedback`),
     ])
